@@ -1,0 +1,61 @@
+<!--suppress JSAnnotator -->
+<template>
+    <div class="page " data-name="live"> <!-- page-with-subnavbar -->
+        <!-- Top Navbar -->
+        <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+                <div class="left">
+                    <a href="#" class="link icon-only back" >
+                        <i class="if-not-ios f7-icons icon-header-arrow-back"></i>
+                        <i class="if-ios icon icon-back"></i>
+                    </a>
+                </div>
+                <div class="title sliding">
+                   053810725908 DashCam CH-1
+                </div>
+                <div class="right">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content" style="	    border: 0 solid #000;		background-color: #000;		height: 280px;">
+            <div id="palyer053810724507CH1" class="player-modal" style="z-index: 10000; width:100%; height: 100%; display: block;"><iframe src="https://securetrack.co/808gps/open/player/video.html?lang=en&amp;devIdno=053810725908&amp;index=1&amp;channel=1&amp;close=20" id="livestream" height="100%" width="100%" title="Live" allow="fullscreen" style="border: none;"></iframe></div>
+							
+			<!--<iframe src="https://securetrack.co/808gps/open/player/video.html?lang=en&devIdno=053810725908&channel=1&close=20" id="livestream" height="300px" width="99%" style="border: none;overflow:hidden" title="Live"></iframe>-->
+        </div>
+    </div>
+</template>
+
+
+<script>
+    // script must return component object
+    return {
+        data: function () {
+            let self = this;
+
+            let ret = {
+                IMSI: '',
+            };
+
+            return ret;
+        },
+        methods: {
+            
+
+        },
+
+        on: {
+            pageInit: function (e, page) {
+                let self = this;
+               
+            },
+
+            pageBeforeRemove: function () {
+                AssetUpdateEvents.off('updateReceived', this.UpdateData);
+            }
+
+        }
+    };
+</script>

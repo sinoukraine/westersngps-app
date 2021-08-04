@@ -1,0 +1,19 @@
+{
+    "android": {
+        "debug": {
+            "keystore": "D:/Work/app/HBuilder/new/westerngps.jks",
+            "storePassword": "quiktrak",
+            "alias": "quiktrak",
+            "password" : "quiktrak",
+            "keystoreType": "jks"
+        },
+        "release": {
+            "keystore": "D:/Work/app/HBuilder/new/westerngps.jks",
+            "storePassword": "quiktrak",
+            "alias": "quiktrak",
+            "password" : "quiktrak",
+            "keystoreType": "jks",
+            "packageType": "bundle"
+        }
+    }
+}
